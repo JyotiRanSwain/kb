@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Enquiry | Kaberi Beverages Pvt. Ltd.</title>
+<meta name="description" content="Submit a product or bulk order enquiry to Kaberi Beverages Pvt. Ltd., Kolkata.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="enquiry.html">
+
+<header id="site-header" class="site-header"></header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Customer Enquiry</div>
+      <span class="eyebrow">Customer Enquiry</span>
+      <h1>Tell us what you need</h1>
+      <p>Whether it's a one-time order or a recurring supply, send us the details and we'll follow up.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="form-card reveal" style="max-width:760px; margin:0 auto;">
+        <form data-kaberi-form novalidate>
+          <div class="form-grid">
+            <div class="field"><label for="e-name">Name</label><input id="e-name" type="text" required><span class="err"></span></div>
+            <div class="field"><label for="e-company">Company Name</label><input id="e-company" type="text"><span class="err"></span></div>
+            <div class="field"><label for="e-phone">Mobile Number</label><input id="e-phone" type="tel" data-type="phone" required><span class="err"></span></div>
+            <div class="field"><label for="e-email">Email</label><input id="e-email" type="email" required><span class="err"></span></div>
+            <div class="field"><label for="e-city">City</label><input id="e-city" type="text" required><span class="err"></span></div>
+            <div class="field">
+              <label for="e-product">Product</label>
+              <select id="e-product" required>
+                <option value="">Select a product</option>
+                <option>250 ML</option>
+                <option>500 ML</option>
+                <option>1 Litre</option>
+                <option>2 Litre</option>
+                <option>5 Litre</option>
+                <option>20 Litre Jar</option>
+              </select>
+              <span class="err"></span>
+            </div>
+          </div>
+          <div class="field"><label for="e-qty">Required Quantity</label><input id="e-qty" type="text" placeholder="e.g. 50 units / week" required><span class="err"></span></div>
+          <div class="field full"><label for="e-message">Message</label><textarea id="e-message" rows="4"></textarea><span class="err"></span></div>
+          <button type="submit" class="btn btn-primary btn-block">Submit Enquiry</button>
+        </form>
+        <div class="form-success">
+          <div class="check"><svg width="32" height="32" viewBox="0 0 32 32"><path d="M7 17l6 6 12-14"/></svg></div>
+          <h3 style="margin-bottom:4px;">Enquiry submitted</h3>
+          <p style="margin:0;">Thanks &mdash; we've received your enquiry and will be in touch shortly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script src="js/partials.js"></script>
+<script src="js/frame-animation.js"></script>
+<script src="js/forms.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
